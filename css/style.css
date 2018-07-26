@@ -1,0 +1,367 @@
+/*-- BOOTSTRAP OVER-RIDE --------------------------*/
+.container-fluid {padding: 0px;}
+
+/*-- END-BOOTSTRAP OVER-RIDE --------------------------*/
+
+body {
+    line-height: 2em;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+h2 span {
+    display: block;
+    position: relative; 
+    margin-bottom: 30px;
+}
+
+h2 span::after {
+    color: transparent;
+    content: "..........";
+    border-bottom: 3px solid orange;
+    position: relative;
+}
+
+
+/*-- HEADER --------------------------*/
+
+.slicknav_menu {
+	display:none;
+}
+
+header {
+    margin: 0 auto;
+    text-align: center;
+}
+
+header #logo {
+    margin: 0 auto;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 40px;
+}
+
+header nav ul li a { color: #959595; font-size: 1.2em; text-decoration: none;}
+header nav ul li a:active { color: #959595; font-size: 1.2em; text-decoration: none;}
+header nav ul li a:visited { color: #959595; font-size: 1.2em; text-decoration: none;}
+header nav ul li a:hover { color: #0bb2ab; text-decoration: none; }
+
+/*-- SLIDER IMAGES ----------------------------*/
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+header div#slider { overflow: hidden; }
+header div#slider figure img { width: 20%; float: left; }
+header div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+}
+
+/*-- APPOINTMENT BAR -----------------------------*/
+
+#AppointmentBar {
+    padding-top: 15px;
+    text-align: center;
+    background-color: #f8c23e;
+    height: 60px;
+}
+
+#AppointmentBar a {
+    border: 1px solid #fff;
+    padding: 5px 20px 5px 20px;;
+    color: #fff;
+}
+
+/*-- END-APPOINTMENT BAR -----------------------------*/
+
+
+/*-- WELCOME -----------------------------*/
+
+#Welcome {
+    margin-top: 20px;
+    color: #959595;
+    font-size: small;
+    margin-bottom: 20px;
+}
+
+#Welcome h2 {color: #141414;}
+#Welcome h2 span::after {
+    left: -270px;
+    top: 5px;
+}
+
+
+
+/*-- END-WELCOME -------------------------*/
+
+
+
+/*-- ONBOARDING -----------------------------*/
+
+#OnBoarding {
+    text-align: center;
+    background-image: url('../images/bg-patient%20on-boarding.jpg');
+    max-height: 338px;
+}
+
+#Onboarding h3 {
+    color: #323838;
+}
+
+
+#OnBoarding p {
+    color: #8b8d8a;
+}
+
+
+
+
+/*-- END-ONBOARDING -------------------------*/
+
+
+
+
+/*-- REVIEWS -----------------------------*/
+
+#Reviews {
+    text-align: center;
+    background-image: url('../images/bg-patient%20reviews.jpg');
+    max-height: 510px;
+    color: #fff;
+}
+
+.cd-testimonials li {
+    width: 10px;
+}
+
+.cd-testimonials li {
+    font-size: 2em;
+    width: 200px;
+}
+
+.cd-testimonials li img {
+    border-radius: 150px;
+}
+
+.flex-direction-nav li {
+  position: absolute;
+  height: 100%;
+  width: 40px;
+  top: 0;
+}
+ 
+.flex-direction-nav li:first-child {
+  left: 0;
+}
+ 
+.flex-direction-nav li:last-child {
+  right: 0;
+}
+ 
+.flex-direction-nav li a {
+  display: block;
+  height: 100%;
+  width: 100%;
+ 
+  /* image replacement */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+ 
+  transition: background-color 0.2s;
+}
+ 
+.flex-direction-nav li a::before, .flex-direction-nav li a::after {
+  /* left and right arrows in css only */
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 2px;
+  height: 13px;
+  background-color: white;
+}
+ 
+.flex-direction-nav li a::before {
+  transform: translateY(-35px) rotate(45deg);
+}
+ 
+.flex-direction-nav li a::after {
+  transform: translateY(-27px) rotate(-45deg);
+}
+ 
+.flex-direction-nav li:last-child a::before {
+  transform: translateY(-35px) rotate(-45deg);
+}
+ 
+.flex-direction-nav li:last-child a::after {
+  transform: translateY(-27px) rotate(45deg);
+}
+
+
+/*-- END-REVIEWS -------------------------*/
+
+
+/*-- MAP -----------------------------*/
+#Map { height: 200px;}
+/*-- END-MAP -------------------------*/
+
+
+/*-- APPOINTMENT -----------------------------*/
+
+#Appointment {
+    margin: 0 auto;
+    text-align: center;
+    line-height: normal;
+    color: #555555;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #0bb1ad;
+    box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid #006a68;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+input[type=checkbox], input[type=radio] {
+    width: auto;
+} 
+
+.button {
+    border: 2px solid #016c66;
+    background-color: #fff;
+    color: #016c66;
+    width: 30%;
+}
+
+fieldset {
+    font-size: .9em;
+    text-align: left;
+    color: #555555;
+    padding-bottom: 20px;
+}
+
+legend {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    color: #a9a9a9;
+    border-bottom: 2px solid #0bb1ad;
+    
+}
+
+
+
+/*
+input:valid {
+    border: 2px solid #0bb1ad;
+}
+
+input:invalid {
+    border: 2px solid #b50808;
+}
+*/
+
+
+/*-- END-APPOINTMENT -------------------------*/
+
+/*-- FOOTER -----------------------------*/
+
+footer {
+    margin: 0 auto;
+    padding-top: 30px;
+    text-align: center;
+    background-color: #002157;
+    max-height: 100px;
+    color: #fff;
+}
+
+footer ul li {
+    display: inline;
+}
+
+/*-- END-FOOTER -------------------------*/
+
+/**
+  MEDIA QUERIES
+*/
+
+
+@media screen and (max-width: 40em) {
+	.js #menu {
+		display:none;
+	}
+	
+	.js .slicknav_menu {
+		display:block;
+	}
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    #quote-carousel 
+    {
+      margin-bottom: 0;
+      padding: 0 40px 30px 40px;
+    }
+    
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) { 
+    
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+    
+    #quote-carousel .carousel-indicators {
+        bottom: -20px !important;  
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
+}
